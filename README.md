@@ -139,9 +139,9 @@ The contents of the public folder will then be uploaded to the specified Amazon 
 
 ### Deploying to Production
 
-The production URL is [http://inspirationalsearch.spies.dk/isearch/prod/index.html](http://inspirationalsearch.spies.dk/)
+The production URL is closed
 
-To deploy to production create a PR from `master` into `prod`. Once that's merged Codeship will do the rest (basically calling `gulp prod:deploy` with the S3 bucket name set to `inspirationalsearch.spies.dk`).
+To deploy to production create a PR from `master` into `prod`. Once that's merged Codeship will do the rest (basically calling `gulp prod:deploy` with the S3 bucket name set to ``).
 
 # APPENDIX
 
@@ -307,12 +307,6 @@ uploaded by the [`test/uat/upload_screenshots_to_s3.js`]() script.
 
 These are stored in the same folder as the latest release version
 (`1.0.23` currently)
-
->Example: http://inspirationalsearch.spies.dk/isearch/1.0.23/uat/index.html
-
-The UI has _basic_ navigation using **left/right keyboard arrows**
-and routing (_which allows us to share a link to a specific screenshot_)
-e.g: http://inspirationalsearch.spies.dk/isearch/1.0.23/uat/index.html#osx10.10~iphone~8.4~spanienclassicpackage_04_tc_tags.png
 
 
 ## Debugging (Tracing Requests)
